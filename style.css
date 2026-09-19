@@ -1,0 +1,200 @@
+d
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER & MENU */
+header {
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00b4d8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+nav ul li a {
+    color: #e0e1dd;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
+}
+
+.lang-btn {
+    background-color: #1b263b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    flex: 1;
+    padding: 3rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HERO (HOME) */
+.hero {
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #0d1b2a;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #00b4d8;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0077b6;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.content-section h1 {
+    color: #0d1b2a;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #00b4d8;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* GRID (APLICACOES) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #00b4d8;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1b263b;
+}
+
+/* BIBLIOGRAPHY */
+.bib-list {
+    list-style: square;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* CREDITS */
+.text-center { text-align: center; }
+.creditos-box p { font-size: 1.1rem; }
+
+/* FORMS (CONTATO) */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1b263b;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* REGRA 4: Arquivo css externo (travar textarea) */
+.form-group textarea {
+    min-height: 120px;
+    resize: none; 
+}
+
+/* FOOTER */
+footer {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}

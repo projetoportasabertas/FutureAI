@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATO | IA no Mundo</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FutureIA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="aplicacoes.html">APLICACOES</a></li>
+                <li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
+                <li><a href="creditos.html">CREDITOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="en_index.html" class="lang-btn">EN 🇺🇸</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="content-section">
+            <h1>Entre em Contato</h1>
+            <form id="formContato" class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{10,11}" title="Digite apenas números (10 ou 11 dígitos)" placeholder="(XX) XXXXX-XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="avaliacao">Avalie nosso site (0 a 5):</label>
+                    <select id="avaliacao" name="avaliacao" required>
+                        <option value="">Selecione...</option>
+                        <option value="0">0 - Ruim</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Regular</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Deixe seu comentário:</label>
+                    <textarea id="comentario" name="comentario" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;Todos os direitos reservados<br> Trabalho acadêmico sem fins lucrativos</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
