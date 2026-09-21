@@ -3,45 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIBLIOGRAFIA | IA no Mundo</title>
-    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>BIBLIOGRAFIA | FutureIA</title>
+    <link rel="icon" href="img/icon.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <div class="logo">FutureIA</div>
         <nav>
-            <!-- MENU na sequência solicitada, sem palavras compostas (Regra 3 e Regra 5 para âncoras) -->
             <ul>
-                
-<li><a href="index.html">HOME</a></li>
-<li><a href="sobre.html">SOBRE</a></li>
-<li><a href="aplicacoes.html">APLICACOES</a></li>
-<li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
-<li><a href="creditos.html">CREDITOS</a></li>
-<li><a href="contato.html">CONTATO</a></li>
-<li><a href="en_index.html" class="lang-btn">EN 🇺🇸</a></li>
-
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="aplicacoes.html">APLICAÇÕES</a></li>
+                <li><a href="bibliografia.html" class="ativo" aria-current="page">BIBLIOGRAFIA</a></li>
+                <li class="dropdown">
+                    <a href="creditos.html" aria-haspopup="true">CRÉDITOS ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="creditos.html#orientadores">Orientadores</a></li>
+                        <li><a href="creditos.html#desenvolvedores">Desenvolvedores</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="en_bibliografia.html" class="lang-btn" title="Traduzir para Inglês">EN 🇺🇸</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        
-    <section class="content-section">
-        <h1>Bibliografia</h1>
-        <ul class="bib-list">
-            <li>RUSSELL, Stuart; NORVIG, Peter. <em>Artificial Intelligence: A Modern Approach</em>. 4ª ed. Pearson, 2021.</li>
-            <li>BOSTROM, Nick. <em>Superintelligence: Paths, Dangers, Strategies</em>. Oxford University Press, 2014.</li>
-            <li>TURING, Alan M. <em>Computing Machinery and Intelligence</em>. Mind, 1950.</li>
-            <li>GOODFELLOW, Ian; BENGIO, Yoshua; COURVILLE, Aaron. <em>Deep Learning</em>. MIT Press, 2016.</li>
-            <li>KAPLAN, Jerry. <em>Artificial Intelligence: What Everyone Needs to Know</em>. Oxford University Press, 2016.</li>
-        </ul>
-    </section>
-    
+        <section class="content-section">
+            <h1>Bibliografia</h1>
+            <figure class="fig-topo">
+                <img src="img/imagem8.jpg" alt="Pilha de livros sobre inteligência artificial" width="800" height="500">
+            </figure>
+            <ul class="bib-list">
+                <li>RUSSELL, Stuart; NORVIG, Peter. <em>Artificial Intelligence: A Modern Approach</em>. 4ª ed. Pearson, 2021.</li>
+                <li>BOSTROM, Nick. <em>Superintelligence: Paths, Dangers, Strategies</em>. Oxford University Press, 2014.</li>
+                <li>TURING, Alan M. <em>Computing Machinery and Intelligence</em>. Mind, 1950.</li>
+                <li>GOODFELLOW, Ian; BENGIO, Yoshua; COURVILLE, Aaron. <em>Deep Learning</em>. MIT Press, 2016.</li>
+                <li>KAPLAN, Jerry. <em>Artificial Intelligence: What Everyone Needs to Know</em>. Oxford University Press, 2016.</li>
+            </ul>
+        </section>
     </main>
+    <div class="ancora-topo" style="position:sticky; bottom:0; width:100%; height:0; z-index:1000;">
+        <a href="#topo" class="ancora-img" title="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="position:absolute; right:0; bottom:0; margin:0; padding:0; line-height:0;">
+            <img style="display:block;" src="img/imagem14.jpg" alt="Ícone para voltar ao topo" width="60" height="60">
+        </a>
+    </div>
     <footer>
-        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;Todos os direitos reservados<br> Trabalho acadêmico sem fins lucrativos</p>
+        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;Todos os direitos reservados<br>Trabalho acadêmico sem fins lucrativos</p>
     </footer>
-    
 </body>
 </html>

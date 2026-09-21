@@ -3,39 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT | AI in the World</title>
-   <link rel="icon" href="img/icon.png" type="image/png">
+    <title>ABOUT | FutureIA</title>
+    <link rel="icon" href="img/icon.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <div class="logo">FutureIA</div>
         <nav>
             <ul>
-                
-<li><a href="en_index.html">HOME</a></li>
-<li><a href="en_sobre.html">ABOUT</a></li>
-<li><a href="en_aplicacoes.html">APPLICATIONS</a></li>
-<li><a href="en_bibliografia.html">BIBLIOGRAPHY</a></li>
-<li><a href="en_creditos.html">CREDITS</a></li>
-<li><a href="en_contato.html">CONTACT</a></li>
-<li><a href="index.html" class="lang-btn">PT 🇧🇷</a></li>
-
+                <li><a href="en_index.html">HOME</a></li>
+                <li><a href="en_sobre.html" class="ativo" aria-current="page">ABOUT</a></li>
+                <li><a href="en_aplicacoes.html">APPLICATIONS</a></li>
+                <li><a href="en_bibliografia.html">BIBLIOGRAPHY</a></li>
+                <li class="dropdown">
+                    <a href="en_creditos.html" aria-haspopup="true">CREDITS ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="en_creditos.html#advisors">Advisors</a></li>
+                        <li><a href="en_creditos.html#developers">Developers</a></li>
+                    </ul>
+                </li>
+                <li><a href="en_contato.html">CONTACT</a></li>
+                <li><a href="sobre.html" class="lang-btn" title="Translate to Portuguese">PT 🇧🇷</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        
-    <section class="content-section">
-        <h1>About Artificial Intelligence</h1>
-        <p>Artificial Intelligence (AI) is a branch of computer science focused on creating systems capable of performing tasks that typically require human intelligence, such as pattern recognition, decision-making, and language translation.</p>
-        <p>Its impacts on the world are vast. On one hand, we have a massive increase in productivity and scientific breakthroughs. On the other, we face ethical challenges such as algorithmic bias, data privacy, and structural changes in the job market.</p>
-    </section>
-    
+        <section class="content-section">
+            <h1>About Artificial Intelligence</h1>
+            <nav class="ancoras" aria-label="On this page">
+                <a href="#definicao">Definition</a>
+                <a href="#impactos">Impacts</a>
+            </nav>
+            <article id="definicao" class="bloco">
+                <h2>What AI is</h2>
+                <p>Artificial Intelligence (AI) is a branch of computer science focused on creating systems capable of performing tasks that typically require human intelligence.</p>
+                <figure>
+                    <img src="img/imagem2.jpg" alt="Illustration of a digital brain made of circuits" width="800" height="500">
+                </figure>
+            </article>
+            <article id="impactos" class="bloco">
+                <h2>Impacts on today's world</h2>
+                <p>Its impacts on today's world include increased productivity, scientific breakthroughs, as well as ethical challenges and shifts in the job market.</p>
+                <ul class="lista-impactos">
+                    <li>Increased productivity</li>
+                    <li>Scientific breakthroughs</li>
+                    <li>Ethical challenges</li>
+                    <li>Shifts in the job market</li>
+                </ul>
+                <figure>
+                    <img src="img/imagem3.jpg" alt="Illustration of people and machines working together" width="800" height="500">
+                </figure>
+            </article>
+        </section>
     </main>
+    <div class="ancora-topo" style="position:sticky; bottom:0; width:100%; height:0; z-index:1000;">
+        <a href="#topo" class="ancora-img" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="position:absolute; right:0; bottom:0; margin:0; padding:0; line-height:0;">
+            <img style="display:block;" src="img/imagem14.jpg" alt="Back to top icon" width="60" height="60">
+        </a>
+    </div>
     <footer>
-        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;All rights reserved<br> Non-profit academic work</p>
+        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;All rights reserved<br>Non-profit academic work</p>
     </footer>
-    
 </body>
 </html>

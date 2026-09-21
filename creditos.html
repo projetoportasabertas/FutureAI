@@ -3,45 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRÉDITOS | IA no Mundo</title>
-    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>CRÉDITOS | FutureIA</title>
+     <link rel="icon" href="img/icon.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <div class="logo">FutureIA</div>
         <nav>
-            <!-- MENU na sequência solicitada, sem palavras compostas (Regra 3 e Regra 5 para âncoras) -->
             <ul>
-                
-<li><a href="index.html">HOME</a></li>
-<li><a href="sobre.html">SOBRE</a></li>
-<li><a href="aplicacoes.html">APLICACOES</a></li>
-<li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
-<li><a href="creditos.html">CREDITOS</a></li>
-<li><a href="contato.html">CONTATO</a></li>
-<li><a href="en_index.html" class="lang-btn">EN 🇺🇸</a></li>
-
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="aplicacoes.html">APLICAÇÕES</a></li>
+                <li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
+                <li class="dropdown">
+                    <a href="creditos.html" class="ativo" aria-haspopup="true">CRÉDITOS ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="creditos.html#orientadores">Orientadores</a></li>
+                        <li><a href="creditos.html#desenvolvedores">Desenvolvedores</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="en_creditos.html" class="lang-btn" title="Traduzir para Inglês">EN 🇺🇸</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        
-    <section class="content-section text-center">
-        <h1>Créditos do Projeto</h1>
-        <div class="creditos-box">
-            <p><strong>Professores Orientadores:</strong> Celia Barufaldi, Waldir Junior</p>
-            <p><strong>Disciplina:</strong> Desenvolvimento Web / Informática</p>
-            <p><strong>Desenvolvedores:</strong> Eduardo Costa, Eduardo Lucas, Guilherme, Arthur</p>
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
-            <p><em>* Projeto disponibilizado na área do servidor da escola.</em></p>
-        </div>
-    </section>
-    
+        <section class="content-section text-center">
+            <h1>Créditos do Projeto</h1>
+            <div class="creditos-box">
+                <div id="orientadores" class="cred-bloco">
+                    <img src="img/imagem9.jpg" alt="Ilustração de professores orientando um projeto" width="800" height="500">
+                    <h3>Professores Orientadores</h3>
+                    <p>Celia Barufaldi, Waldir Junior</p>
+                    <p><strong>Disciplina:</strong> Desenvolvimento Web / Informática</p>
+                </div>
+                <hr>
+                <div id="desenvolvedores" class="cred-bloco">
+                    <img src="img/imagem10.jpg" alt="Ilustração de alunos programando em computadores" width="800" height="500">
+                    <h3>Alunos Desenvolvedores</h3>
+                    <p>Arthur, Eduardo Costa, Eduardo Lucas, Guilherme</p>
+                </div>
+                <hr>
+                <p><em>* Projeto disponibilizado na área do servidor da escola.</em></p>
+            </div>
+        </section>
     </main>
+    <div class="ancora-topo" style="position:sticky; bottom:0; width:100%; height:0; z-index:1000;">
+        <a href="#topo" class="ancora-img" title="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="position:absolute; right:0; bottom:0; margin:0; padding:0; line-height:0;">
+            <img style="display:block;" src="img/imagem14.jpg" alt="Ícone para voltar ao topo" width="60" height="60">
+        </a>
+    </div>
     <footer>
-        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;Todos os direitos reservados<br> Trabalho acadêmico sem fins lucrativos</p>
+        <p>ETEC DE HORTOLÂNDIA 2026 - &copy;Todos os direitos reservados<br>Trabalho acadêmico sem fins lucrativos</p>
     </footer>
-    
 </body>
 </html>
