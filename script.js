@@ -6,22 +6,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var texto = {
         pt: {
-            nome: 'Digite seu nome completo (mínimo 3 letras, sem números).',
+            nome: 'Digite seu nome completo (mínimo 3 caracteres, sem números).',
             email: 'Digite um e-mail válido, como nome@exemplo.com.',
             telefone: 'Digite apenas números, com DDD (10 ou 11 dígitos).',
             avaliacao: 'Escolha uma nota de 0 a 5.',
             comentario: 'Escreva um comentário com pelo menos 10 caracteres.',
             erro: 'Corrija os campos destacados e envie novamente.',
-            ok: 'Mensagem enviada com sucesso. Obrigado pelo contato!'
+            ok: 'Mensagem enviada com sucesso. Obrigado pelo contato!',
+            limpo: 'Formulário limpo.'
         },
         en: {
-            nome: 'Enter your full name (at least 3 letters, no numbers).',
+            nome: 'Enter your full name (at least 3 characters, no numbers).',
             email: 'Enter a valid email, such as name@example.com.',
             telefone: 'Enter numbers only, with area code (10 or 11 digits).',
             avaliacao: 'Choose a rating from 0 to 5.',
             comentario: 'Write a comment with at least 10 characters.',
             erro: 'Fix the highlighted fields and submit again.',
-            ok: 'Message sent successfully. Thank you for contacting us!'
+            ok: 'Message sent successfully. Thank you for contacting us!',
+            limpo: 'Form cleared.'
         }
     }[idioma];
 
@@ -41,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
         campo.setCustomValidity('');
         var valido = campo.checkValidity();
 
-        // Nome: somente letras, espaços, apóstrofo e hífen
-        if (valido && campo === nome && !/^[A-Za-zÀ-ÿ' -]{3,}$/.test(nome.value.trim())) {
+        // Nome: letras, espaços e caracteres especiais são permitidos; números não
+        if (valido && campo === nome && (/[0-9]/.test(nome.value) || nome.value.trim().length < 3)) {
             valido = false;
         }
 
@@ -82,4 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
         status.classList.add('ok');
         form.reset();
     });
+
+    var btnLimpar = document.getElementById('btnLimpar');
+    if (btnLimpar) {
+        btnLimpar.addEventListener('click', function () {
+            form.reset();
+            campos.forEach(function (campo) {
+                campo.classList.remove('invalido');
+                campo.setCustomValidity('');
+            });
+            status.className = 'status';
+            status.textContent = texto.limpo;
+        });
+    }
 });

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT | FutureIA</title>
+    <title>CONTACT | IA</title>
     <link rel="icon" href="img/icon.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="topo">
-        <div class="logo">FutureIA</div>
+        <div class="logo">IA</div>
         <nav>
             <ul>
                 <li><a href="en_index.html">HOME</a></li>
@@ -31,7 +31,7 @@
     <main class="container">
         <section class="content-section">
             <h1>Contact Us</h1>
-            <figure class="fig-topo">
+            <figure class="fig-topo fig-pequena">
                 <img src="img/imagem11.jpg" alt="Illustration of an envelope and a message bubble" width="800" height="500">
             </figure>
             <form id="formContato" class="contato-form" novalidate>
@@ -64,18 +64,21 @@
                     <textarea id="comentario" name="comentario"  minlength="10" placeholder="Write your message here..."></textarea>
                 </div>
                 <p id="msgStatus" class="status" role="status" aria-live="polite"></p>
-                <button type="submit" class="btn">Send Message</button>
+                <div class="form-botoes">
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" id="btnLimpar" class="btn btn-secundario">Clear</button>
+                </div>
             </form>
         </section>
     </main>
-    <div class="ancora-topo" style="position:sticky; bottom:0; width:100%; height:0; z-index:1000;">
-        <a href="#topo" class="ancora-img" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="position:absolute; right:0; bottom:0; margin:0; padding:0; line-height:0;">
-            <img style="display:block;" src="img/imagem14.jpg" alt="Back to top icon" width="60" height="60">
-        </a>
-    </div>
-    <footer>
+    <div class="rodape-wrapper">
+        <footer>
         <p>ETEC DE HORTOLÂNDIA 2026 - &copy;All rights reserved<br>Non-profit academic work</p>
     </footer>
+        <a href="#topo" class="ancora-img" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+            <img src="img/imagem14.jpg" alt="Back to top icon" width="50" height="50">
+        </a>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
